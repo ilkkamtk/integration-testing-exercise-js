@@ -16,7 +16,7 @@ In the test folder, you will find test files with TODO comments for different AP
 
 Similarly, in the test folder, you will find test files with TODO comments for error scenarios. Your goal is to complete these tests to validate that the API handles errors appropriately. The error tests cover various situations, including 404 errors, validation errors, and more.
 
-#### 3. End-to-End tests
+#### 3. End-to-End tests (not mandatory)
 
 Also, in the test folder, you will find test files with TODO comments for end-to-end tests. Your goal is to test that the font page in `index.ejs` HTML has correct `<table>` structure (in comments) and that students can be uploaded with the form in `post.ejs`.
 
