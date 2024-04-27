@@ -59,7 +59,7 @@ const studentPost = async (req, res, next) => {
 
     const id = await addStudent(student);
     const message = {
-      message: 'student added',
+      message: 'Student created successfully',
       id: id,
     };
     res.json(message);
@@ -85,7 +85,7 @@ const studentPut = async (req, res, next) => {
     const result = await updateStudent(student, id);
     if (result) {
       const message = {
-        message: 'item updated',
+        message: 'Student updated successfully',
         id,
       };
       res.json(message);
@@ -121,7 +121,7 @@ const studentDelete = async (req, res, next) => {
     const result = await deleteStudent(id);
     if (result) {
       const message = {
-        message: 'student deleted',
+        message: 'Student deleted successfully',
         id,
       };
       res.json(message);

@@ -46,7 +46,7 @@ const updateStudent = async (data, id) => {
 
   const [headers] = await promisePool.execute(sql);
   if (headers.affectedRows === 0) {
-    throw new CustomError('No students updated', 400);
+    throw new CustomError('No students found', 400);
   }
   return true;
 };
@@ -60,7 +60,7 @@ const deleteStudent = async (studentId) => {
     [studentId]
   );
   if (headers.affectedRows === 0) {
-    throw new CustomError('No students deleted', 400);
+    throw new CustomError('No students found', 400);
   }
   return true;
 };

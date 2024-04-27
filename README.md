@@ -36,6 +36,5 @@ Also, in the test folder, you will find test files with TODO comments for end-to
 ### NPM libraries needed for testing (Dev dependencies)
 
 - jest
-- ts-jest
 - supertest
 - randomstring
