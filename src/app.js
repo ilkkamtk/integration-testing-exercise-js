@@ -17,7 +17,14 @@ import api from './api/index.js';
 const app = express();
 
 app.use(morgan('dev'));
-app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-eval'"],
+    },
+  })
+);
 app.use(cors());
 app.use(express.json());
 
